@@ -230,17 +230,15 @@ def main(cfg: DictConfig):
                     vision_mean = all_pre[:N_GLOBAL].mean(dim=0)
                     mse_multi = (all_pre - vision_mean.unsqueeze(0)).square().mean()
 
-                    all_pre_flat = rearrange(all_pre, "v b d -> (v b) d")
-                    all_image_proj = projector_vision(all_pre_flat)
+                    image_proj = projector_vision(vision_mean)
                     text_proj = projector_text(text_linear)
 
                     mse_loss_cross_text = (
-                        (text_linear.repeat(N_VIEWS, 1).detach() - all_image_proj).square().mean()
+                        (text_linear.detach() - image_proj).square().mean()
                     )
                     mse_loss_cross_vision = (
                         (vision_mean.detach() - text_proj).square().mean()
                     )
-                    image_proj = all_image_proj[:len(text_linear)]
 
                     mse_cross = (mse_loss_cross_text + mse_loss_cross_vision) / 2
 
