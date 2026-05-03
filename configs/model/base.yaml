@@ -1,0 +1,5 @@
+vit: vit_base_patch16_224
+hidden_size: 768
+num_layers: 12
+num_heads: 12
+embed_dim: 768

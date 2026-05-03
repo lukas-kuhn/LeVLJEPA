@@ -1,0 +1,5 @@
+vit: vit_small_patch16_224
+hidden_size: 384
+num_layers: 12
+num_heads: 6
+embed_dim: 384
