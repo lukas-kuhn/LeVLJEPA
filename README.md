@@ -127,18 +127,6 @@ The training scripts include periodic ImageNet zero-shot evaluation. Additional 
 
 Evaluation scripts will be released in this repository together with the camera-ready version.
 
-## Results
-
-Main results from the paper, using ViT-B/16 trained on CC12M for 50k steps:
-
-| Method | Objective | Multi-view | Avg. Linear Probe |
-|--------|-----------|------------|-------------------|
-| CLIP | Contrastive | No | 48.8 |
-| SigLIP | Contrastive | No | 49.4 |
-| LeVLJEPA | Non-contrastive | No | 47.6 |
-| CLIP-Rocket | Contrastive | Yes | 57.5 |
-| LeVLJEPA+ | Non-contrastive | Yes | 57.5 |
-
 ## Checkpoints
 
 Checkpoints are not included in the repository. If released separately, links will be added here.
