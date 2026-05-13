@@ -134,10 +134,9 @@ Checkpoints are not included in the repository. If released separately, links wi
 ## Citation
 
 ```bibtex
-@inproceedings{anonymous2026levljepa,
-  title     = {LeVLJEPA: Non-Contrastive Joint-Embedding Prediction for Vision-Language Pretraining},
-  author    = {Anonymous Authors},
-  booktitle = {NeurIPS},
-  year      = {2026}
+@article{levljepa2026,
+  title  = {LeVLJEPA: End-to-End Vision-Language Pretraining Without Contrastive Negatives},
+  author = {Kuhn, Lukas and Serra, Giuseppe and Balestriero, Randall and Buettner, Florian},
+  year   = {2026},
 }
 ```
