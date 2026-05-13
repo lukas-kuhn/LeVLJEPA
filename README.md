@@ -1,4 +1,13 @@
-# LeVLJEPA
+<h1 align="center">LeVLJEPA</h1>
+
+<p align="center"><i>End-to-End Vision-Language Pretraining
+Without Contrastive Negatives</i></p>
+
+<p align="center">
+  <a href="https://levljepa.github.io/">Project Website</a>
+</p>
+
+---
 
 Official implementation of **LeVLJEPA** and **LeVLJEPA+**, non-contrastive methods for vision-language pretraining based on joint-embedding prediction and SIGReg regularization.
 
